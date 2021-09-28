@@ -4,4 +4,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lesson.WBA.H1.CsharpFeatures.Domain\Lesson.WBA.H1.CsharpFeatures.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

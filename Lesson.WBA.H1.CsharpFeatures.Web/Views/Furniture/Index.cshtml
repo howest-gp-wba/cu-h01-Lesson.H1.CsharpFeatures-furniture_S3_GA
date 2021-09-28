@@ -1,0 +1,14 @@
+﻿@using Lesson.WBA.H1.CsharpFeatures.Domain
+@model List<Furniture>
+
+
+<ul>
+    @{
+        foreach (Furniture furniture in Model)
+        {
+            <li>@furniture?.Type</li>
+        }
+    }
+</ul>
+
+<a asp-action="Details">Details</a>

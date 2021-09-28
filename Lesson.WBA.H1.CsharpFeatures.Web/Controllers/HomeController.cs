@@ -18,9 +18,10 @@ namespace Lesson.WBA.H1.CsharpFeatures.Web.Controllers
             _logger = logger;
         }
 
-        public string Index()
+
+        public IActionResult Index()
         {
-            return "Welcome to WBA";
+            return View();
         }
 
         public IActionResult Privacy()

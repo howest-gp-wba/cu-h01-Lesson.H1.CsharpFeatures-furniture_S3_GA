@@ -1,0 +1,24 @@
+﻿@using Lesson.WBA.H1.CsharpFeatures.Web.ViewModels
+
+@model FurnitureListViewModel
+
+<ul>
+    @{
+        foreach (var furniture in Model.Furniture)
+        {
+            <li>
+                @furniture?.Type - @furniture?.Color<br />
+                <i>@furniture?.Description</i>
+            </li>
+        }
+    }
+</ul>
+Total number of articles: @Model.Count
+<hr />
+<blockquote>
+    <cite>
+        @Model.QuoteOfTheDay
+    </cite>
+</blockquote>
+
+<a asp-action="Index">Basics</a>
